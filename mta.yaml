@@ -1,0 +1,20 @@
+ID: DMM
+_schema-version: '2.1'
+description: Models on DMM
+version: 0.0.1
+
+modules:
+ - name: DMM_MOD
+   type: hdb
+   path: DMM_MOD
+   requires:
+    - name: hdi_DMM_MOD
+
+resources:
+ - name: hdi_DMM_MOD
+   parameters:
+      config:
+         schema: DMM_MOD
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
