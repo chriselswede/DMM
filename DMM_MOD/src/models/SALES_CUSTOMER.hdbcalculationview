@@ -86,7 +86,7 @@
     </input>
     <joinAttribute name="PartnerId"/>
   </calculationView>
-  <calculationView xsi:type="Calculation:JoinView" id="J_SO_BP" cardinality="C1_N" joinType="inner">
+  <calculationView xsi:type="Calculation:JoinView" id="J_SO_BP1" cardinality="C1_N" joinType="inner">
     <viewAttributes>
       <viewAttribute id="PartnerId"/>
       <viewAttribute id="PartnerRole"/>
@@ -128,70 +128,70 @@
     <joinAttribute name="PartnerId"/>
   </calculationView>
 </calculationViews>
-<logicalModel id="J_SO_BP">
+<logicalModel id="J_SO_BP1">
   <attributes>
     <attribute id="PartnerId" order="1" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="PartnerId"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="PartnerId"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="PartnerId"/>
     </attribute>
     <attribute id="PartnerRole" order="2" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="PartnerRole"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="PartnerRole"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="PartnerRole"/>
     </attribute>
     <attribute id="SalesOrderId" order="3" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="SalesOrderId"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="SalesOrderId"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="SalesOrderId"/>
     </attribute>
     <attribute id="CreatedBy" order="4" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="CreatedBy"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="CreatedBy"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="CreatedBy"/>
     </attribute>
     <attribute id="CreatedAt" order="5" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="CreatedAt"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="CreatedAt"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="CreatedAt"/>
     </attribute>
     <attribute id="Currency" order="6" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="Currency"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="Currency"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="Currency"/>
     </attribute>
     <attribute id="BillingStatus" order="8" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="BillingStatus"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="BillingStatus"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="BillingStatus"/>
     </attribute>
     <attribute id="TITLE" order="9" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="TITLE"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="TITLE"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="TITLE"/>
     </attribute>
     <attribute id="FIRST_NAME" order="10" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="FIRST_NAME"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="FIRST_NAME"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="FIRST_NAME"/>
     </attribute>
     <attribute id="LAST_NAME" order="11" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="LAST_NAME"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="LAST_NAME"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="LAST_NAME"/>
     </attribute>
     <attribute id="SEX" order="12" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="SEX"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="SEX"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="SEX"/>
     </attribute>
     <attribute id="PHONE_NUMBER" order="13" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="PHONE_NUMBER"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="PHONE_NUMBER"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="PHONE_NUMBER"/>
     </attribute>
     <attribute id="ContactId" order="14" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="ContactId"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="ContactId"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="ContactId"/>
     </attribute>
     <attribute id="AddressId" order="15" displayAttribute="false" attributeHierarchyActive="false">
       <descriptions defaultDescription="AddressId"/>
-      <keyMapping columnObjectName="J_SO_BP" columnName="AddressId"/>
+      <keyMapping columnObjectName="J_SO_BP1" columnName="AddressId"/>
     </attribute>
   </attributes>
   <calculatedAttributes/>
   <baseMeasures>
     <measure id="NetAmount" order="7" aggregationType="sum" measureType="simple">
       <descriptions defaultDescription="NetAmount"/>
-      <measureMapping columnObjectName="J_SO_BP" columnName="NetAmount"/>
+      <measureMapping columnObjectName="J_SO_BP1" columnName="NetAmount"/>
     </measure>
   </baseMeasures>
   <calculatedMeasures/>
@@ -201,44 +201,44 @@
 <layout>
   <shapes>
     <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
-      <upperLeftCorner x="328.6900820831794" y="112"/>
+      <upperLeftCorner x="328" y="112"/>
     
       <rectangleSize width="160"/>
     </shape>
   
     <shape expanded="true" modelObjectName="Proj_SO" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="395.83468516943316" y="356.9999988079071"/>
+      <upperLeftCorner x="395" y="356"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape expanded="true" modelObjectName="Proj_BPC" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="302" y="496.9999976158142"/>
+      <upperLeftCorner x="302" y="496"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape expanded="true" modelObjectName="Proj_BP" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="92" y="496.9999976158142"/>
+      <upperLeftCorner x="92" y="496"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape expanded="true" modelObjectName="J_BP_BPC" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="118.66666666666666" y="356.9999988079071"/>
+      <upperLeftCorner x="118" y="356"/>
       <rectangleSize height="30" width="160"/>
     </shape>
     <shape modelObjectName="Proj_BP" modelObjectNameSpace="J_BP_BPC" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="20" y="30"/>
-      <rectangleSize width="136.0234375"/>
+      <rectangleSize width="136"/>
     </shape>
     <shape modelObjectName="Proj_BPC" modelObjectNameSpace="J_BP_BPC" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="320" y="30"/>
-      <rectangleSize width="136.0234375"/>
+      <rectangleSize width="136"/>
     </shape>
-    <shape expanded="true" modelObjectName="J_SO_BP" modelObjectNameSpace="CalculationView">
-      <upperLeftCorner x="328.6900820831794" y="217"/>
+    <shape expanded="true" modelObjectName="J_SO_BP1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="328" y="217"/>
       <rectangleSize height="30" width="160"/>
     </shape>
-    <shape modelObjectName="J_BP_BPC" modelObjectNameSpace="J_SO_BP" modelObjectType="JoinNodeInput">
+    <shape modelObjectName="J_BP_BPC" modelObjectNameSpace="J_SO_BP1" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="20" y="30"/>
-      <rectangleSize width="136.0234375"/>
+      <rectangleSize width="136"/>
     </shape>
-    <shape modelObjectName="Proj_SO" modelObjectNameSpace="J_SO_BP" modelObjectType="JoinNodeInput">
+    <shape modelObjectName="Proj_SO" modelObjectNameSpace="J_SO_BP1" modelObjectType="JoinNodeInput">
       <upperLeftCorner x="320" y="30"/>
       <rectangleSize width="250"/>
     </shape>
